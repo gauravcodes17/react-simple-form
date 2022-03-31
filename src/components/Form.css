@@ -1,0 +1,142 @@
+.form-wrapper{
+    width: 360px;
+    height: auto;
+    margin: auto;
+    background-color: #34495e;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+.form-wrapper h1{
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.form-wrapper label{
+    font-size: 19px;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    font-weight: 500;
+}
+.form-wrapper input{
+    margin-top: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 25px;
+    outline: none;
+    border: none;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 8px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.form-wrapper button{
+    margin-top: 12px;
+    background-color: #7e6baf;
+    outline: none;
+    border: none;
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.table-data{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.table-data h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.table{
+    margin: auto;
+    width: 90%;
+    border-collapse: collapse;
+    border: 1px solid #34495e;
+}
+.table td, .table th{
+    padding: 12px 15px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+}
+.table th{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background-color: #34495e;
+    color: #fff;
+}
+.table td{
+    font-size: 15px;
+    font-weight: 500;
+}
+.table tbody tr:nth-child(odd){
+    background-color: #fff;
+}
+.table tbody tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+@media only screen and (max-width: 700px){
+    body{
+        background-color: #fff;
+    }
+    .form-wrapper{
+        width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+    }
+    .form-wrapper label{
+        font-size: 17px;
+    }
+    .form-wrapper input{
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .form-wrapper button{
+        font-size: 18px;
+    }
+    .table-data h1{
+        color: #000;
+    }
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td{
+        width: 100%;
+        display: block;
+    }
+    .table tr{
+        margin-bottom: 15px;
+    }
+    .table td{
+        text-align: right;
+        position: relative;
+    }
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        text-align: left;
+        padding-left: 15px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .table td, .table th{
+        border: 1px solid #ddd;
+    }
+    .table tbody tr{
+        border-bottom: 4px solid #34495e;
+        border-radius: 10px;
+    }
+}
